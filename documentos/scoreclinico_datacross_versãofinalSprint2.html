@@ -1,0 +1,234 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:1rem 0;font-size:13px;color:var(--color-text-primary)}
+.perfil{border:1px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);margin-bottom:1.5rem;overflow:hidden}
+.perfil-header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+.perfil-title{font-size:15px;font-weight:500}
+.perfil-sub{font-size:11px;margin-top:2px}
+.badge{font-size:10px;font-weight:500;padding:2px 10px;border-radius:20px;border:1px solid}
+.h-coral{background:#FAECE7;color:#712B13;border-color:#F0997B}
+.h-blue{background:#E6F1FB;color:#0C447C;border-color:#85B7EB}
+.h-teal{background:#E1F5EE;color:#085041;border-color:#5DCAA5}
+.st-coral{color:#712B13}
+.st-blue{color:#0C447C}
+.st-teal{color:#085041}
+.criterios{padding:0 16px 16px}
+.section-label{font-size:10px;font-weight:500;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.06em;margin:12px 0 6px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+thead tr{background:var(--color-background-secondary)}
+th{padding:7px 10px;text-align:left;font-weight:500;font-size:11px;color:var(--color-text-secondary);border-bottom:1px solid var(--color-border-tertiary)}
+td{padding:7px 10px;border-bottom:1px solid var(--color-border-tertiary);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+.pts-pos{color:#27500A;font-weight:500}
+.pts-neg{color:#A32D2D;font-weight:500}
+.pts-blk{color:#633806;font-weight:500}
+.score-box{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
+.sbox{border:1px solid var(--color-border-secondary);border-radius:8px;padding:10px 12px;text-align:center}
+.sbox-val{font-size:22px;font-weight:500;line-height:1.2}
+.sbox-label{font-size:10px;color:var(--color-text-secondary);margin-top:2px}
+.green-val{color:#27500A}
+.amber-val{color:#633806}
+.red-val{color:#A32D2D}
+.fonte{font-size:10px;color:var(--color-text-tertiary);margin-top:10px;line-height:1.6;font-style:italic}
+.bloqueio-box{background:#FCEBEB;border:1px solid #F09595;border-radius:8px;padding:10px 12px;margin-top:10px}
+.bloqueio-title{font-size:11px;font-weight:500;color:#A32D2D;margin-bottom:4px}
+.bloqueio-item{font-size:11px;color:#501313;line-height:1.7}
+</style>
+<div class="wrap">
+
+<!-- ══ ITU ══ -->
+<div class="perfil">
+  <div class="perfil-header h-coral" style="background:#FAECE7">
+    <div>
+      <div class="perfil-title st-coral">ITU — Infecção do Trato Urinário</div>
+      <div class="perfil-sub st-coral">Pielonefrite aguda · ITU complicada em internação</div>
+    </div>
+    <span class="badge h-coral">CID N10 · N390</span>
+  </div>
+  <div class="criterios">
+    <div class="section-label">Critérios positivos — somam pontos</div>
+    <table>
+      <thead><tr><th>Critério</th><th>Parâmetro</th><th>Pts</th><th>Base clínica</th></tr></thead>
+      <tbody>
+        <tr><td>Afebril ≥ 48h</td><td>Temperatura &lt; 37,8°C por ≥ 48h consecutivas</td><td class="pts-pos">+25</td><td>Protocolo MS — febre resolvida é o principal marco de estabilização na ITU</td></tr>
+        <tr><td>Hemodinâmica estável</td><td>PA ≥ 90/60 mmHg sem vasopressor ativo</td><td class="pts-pos">+20</td><td>Critérios SIRS — ausência de instabilidade sistêmica</td></tr>
+        <tr><td>Tolerância oral ≥ 24h</td><td>Aceita VO sem náusea/vômito; apto para transição ATB oral</td><td class="pts-pos">+20</td><td>IDSA Guidelines 2011 — pré-requisito obrigatório para transição para antimicrobiano oral</td></tr>
+        <tr><td>ATB parenteral ≥ 72h</td><td>Completou fase EV mínima com resposta clínica documentada</td><td class="pts-pos">+15</td><td>MS/ANVISA — mínimo 72h IV para pielonefrite aguda grave</td></tr>
+        <tr><td>Leucocitose em resolução</td><td>Leucócitos &lt; 12.000/mm³ ou redução ≥ 30% em relação ao pico</td><td class="pts-pos">+10</td><td>Marcador laboratorial de resposta terapêutica ao ATB</td></tr>
+        <tr><td>Função renal preservada</td><td>Creatinina sérica estável ou em queda nas últimas 24h</td><td class="pts-pos">+10</td><td>Ausência de lesão renal aguda — segurança para transição oral e transferência</td></tr>
+        <tr><td>Ausência de dispositivo vesical de demora</td><td>Sonda vesical de demora (SVD) removida ou não utilizada</td><td class="pts-pos">+15</td><td>IDSA/CDC — remoção precoce da SVD reduz risco de ITU associada a cateter e favorece resolução clínica</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Critérios negativos — subtraem pontos</div>
+    <table>
+      <thead><tr><th>Critério</th><th>Parâmetro</th><th>Pts</th><th>Base clínica</th></tr></thead>
+      <tbody>
+        <tr><td>Febre persistente</td><td>T ≥ 37,8°C nas últimas 24h</td><td class="pts-neg">−30</td><td>Falha terapêutica ou foco não controlado — contraindicação à transferência</td></tr>
+        <tr><td>Germe resistente em tratamento IV</td><td>Cultura com ESBL, KPC ou MDR aguardando ajuste de ATB parenteral</td><td class="pts-neg">−25</td><td>Necessidade de antimicrobiano IV para germe resistente não disponível ambulatorialmente</td></tr>
+        <tr><td>Lesão renal aguda ativa</td><td>Creatinina &gt; 2× basal ou oligúria (&lt; 0,5 mL/kg/h por &gt; 6h)</td><td class="pts-neg">−20</td><td>Complicação que exige monitorização laboratorial e manejo hospitalar</td></tr>
+        <tr><td>Sinais de sepse urinária</td><td>FC &gt; 100 bpm + FR &gt; 20 irpm + T &gt; 38°C (critérios SIRS ≥ 2)</td><td class="pts-neg">−20</td><td>Instabilidade sistêmica — risco de progressão para choque séptico</td></tr>
+        <tr><td>Sonda vesical de demora (SVD) mantida</td><td>Dispositivo vesical de demora em uso sem indicação imperiosa documentada</td><td class="pts-neg">−20</td><td>Presença de SVD é fator de risco independente para ITU-AC (CAUTI) e perpetuação do foco infeccioso</td></tr>
+        <tr><td>Procedimento urológico recente</td><td>Cateter duplo J, litotripsia ou cistoscopia nas últimas 48h</td><td class="pts-neg">−10</td><td>Risco de reativação infecciosa e instabilidade pós-procedimento</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Avaliação de dispositivo vesical — obrigatória antes da transferência</div>
+    <table>
+      <thead><tr><th>Situação do dispositivo</th><th>Conduta recomendada</th><th>Impacto no score</th></tr></thead>
+      <tbody>
+        <tr><td>Sem cateter vesical</td><td>Situação ideal — sem restrição relacionada ao dispositivo</td><td class="pts-pos">+15 (já incluído nos critérios positivos)</td></tr>
+        <tr><td>Cateter de alívio (intermitente)</td><td>Aceitável para transferência se micção espontânea não estabelecida; reavaliar no destino</td><td class="pts-blk">0 (neutro)</td></tr>
+        <tr><td>Sonda vesical de demora (SVD) em uso</td><td>Avaliar indicação: remover se possível antes da transferência; documentar justificativa se mantida</td><td class="pts-neg">−20 (já incluído nos critérios negativos)</td></tr>
+        <tr><td>SVD com indicação imperiosa mantida</td><td>Obstrução, bexiga neurogênica ou retenção urinária documentada — transferência possível com registro formal</td><td class="pts-neg">−10 (penalização reduzida se indicação justificada)</td></tr>
+      </tbody>
+    </table>
+    <div class="score-box">
+      <div class="sbox"><div class="sbox-val green-val">≥ 70</div><div class="sbox-label">Apto para transferência / alta / habilitação</div></div>
+      <div class="sbox"><div class="sbox-val amber-val">40–69</div><div class="sbox-label">Reavaliar em 24h</div></div>
+      <div class="sbox"><div class="sbox-val red-val">&lt; 40</div><div class="sbox-label">Permanece internado</div></div>
+    </div>
+    <div class="bloqueio-box">
+      <div class="bloqueio-title">Critérios de bloqueio absoluto — score ignorado, não transferir</div>
+      <div class="bloqueio-item">· Choque séptico (PAM &lt; 65 mmHg com vasopressor ativo)<br>· Abscesso renal ou perirrenal confirmado em tratamento<br>· Obstrução urinária não resolvida (hidronefrose obstrutiva ativa)<br>· Germe MDR com ATB IV sem equivalente oral eficaz disponível no destino<br>· SVD de demora mantida por obstrução aguda não resolvida</div>
+    </div>
+    <div class="fonte">Fontes: IDSA/ESCMID Guidelines ITU 2011 · MS — Protocolo Clínico para ITU Complicada · ANVISA — Prevenção de CAUTI 2022 · CDC — Guideline for Prevention of Catheter-Associated UTI 2009 · ANVISA — Uso Racional de Antimicrobianos 2022</div>
+  </div>
+</div>
+
+<!-- ══ PNEUMONIA ══ -->
+<div class="perfil">
+  <div class="perfil-header" style="background:#E6F1FB">
+    <div>
+      <div class="perfil-title st-blue">Pneumonia bacteriana</div>
+      <div class="perfil-sub st-blue">PAC — Pneumonia adquirida na comunidade · em fase de resolução</div>
+    </div>
+    <span class="badge h-blue">CID J18 · J159 · J181</span>
+  </div>
+  <div class="criterios">
+    <div class="section-label">Critérios positivos — somam pontos</div>
+    <table>
+      <thead><tr><th>Critério</th><th>Parâmetro</th><th>Pts</th><th>Base clínica</th></tr></thead>
+      <tbody>
+        <tr><td>Afebril ≥ 48h</td><td>T &lt; 37,8°C por 48h consecutivas</td><td class="pts-pos">+25</td><td>ATS/IDSA 2019 — critério principal de estabilização PAC</td></tr>
+        <tr><td>SpO2 estável em ar ambiente</td><td>SpO2 ≥ 92% sem suporte de O2 suplementar</td><td class="pts-pos">+25</td><td>BTS Guidelines — independência de oxigênio é pré-requisito para transferência segura</td></tr>
+        <tr><td>FR normalizada</td><td>FR ≤ 24 irpm em repouso</td><td class="pts-pos">+15</td><td>PORT Score — parâmetro de estabilidade do padrão respiratório</td></tr>
+        <tr><td>PA estável</td><td>PAS ≥ 90 mmHg sem vasopressor ativo</td><td class="pts-pos">+15</td><td>CURB-65 — ausência de hipotensão como critério de gravidade</td></tr>
+        <tr><td>Tolerância oral ≥ 24h</td><td>Aceita VO e medicação oral sem intercorrências</td><td class="pts-pos">+10</td><td>ATS — pré-requisito para alta ou transição para ATB oral ambulatorial</td></tr>
+        <tr><td>ATB parenteral ≥ 5 dias</td><td>Fase EV mínima cumprida com resposta clínica documentada</td><td class="pts-pos">+10</td><td>MS/SBPT — mínimo 5 dias IV para PAC grave hospitalizada</td></tr>
+        <tr><td>Imagem torácica com resolução</td><td>RX de tórax ou TC de tórax sem progressão de consolidações; ausência de novo derrame ou cavitação</td><td class="pts-pos">+15</td><td>ATS/IDSA 2019 — resolução radiológica confirma resposta terapêutica; piora ou estabilidade sem melhora clínica exige reavaliação</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Critérios negativos — subtraem pontos</div>
+    <table>
+      <thead><tr><th>Critério</th><th>Parâmetro</th><th>Pts</th><th>Base clínica</th></tr></thead>
+      <tbody>
+        <tr><td>Dependência de O2 suplementar</td><td>Necessidade de cateter nasal, máscara de Venturi ou máscara com reservatório para manter SpO2 ≥ 92%</td><td class="pts-neg">−30</td><td>Insuficiência respiratória em resolução — paciente não apto para transferência sem suporte O2 garantido no destino</td></tr>
+        <tr><td>SpO2 em queda</td><td>SpO2 &lt; 92% em ar ambiente ou em uso de O2 suplementar</td><td class="pts-neg">−35</td><td>Falha respiratória ativa — necessidade de escalonamento de suporte ventilatório</td></tr>
+        <tr><td>Febre persistente</td><td>T ≥ 38°C nas últimas 24h</td><td class="pts-neg">−25</td><td>Evolução desfavorável — reavaliar agente etiológico, resistência ou foco secundário</td></tr>
+        <tr><td>Derrame pleural significativo ou progressivo</td><td>Novo derrame ou ausência de resolução do derrame prévio na imagem</td><td class="pts-neg">−20</td><td>Risco de empiema pleural — monitorização por imagem obrigatória antes da transferência</td></tr>
+        <tr><td>FR elevada</td><td>FR &gt; 28 irpm em repouso</td><td class="pts-neg">−15</td><td>Aumento do trabalho respiratório — sinal de instabilidade ventilatória</td></tr>
+        <tr><td>Confusão mental nova ou persistente</td><td>Alteração cognitiva aguda não prévia — critério C do CURB-65</td><td class="pts-neg">−15</td><td>Sinal de gravidade sistêmica — associado a pior prognóstico no CURB-65</td></tr>
+        <tr><td>Imagem torácica com piora ou sem resolução</td><td>Progressão de consolidações, nova cavitação ou derrame em RX ou TC de tórax</td><td class="pts-neg">−20</td><td>Falha terapêutica ou pneumonia necrotizante — contraindicação relativa à transferência; exige reavaliação do esquema ATB</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Avaliação do suporte ventilatório — obrigatória antes da transferência</div>
+    <table>
+      <thead><tr><th>Situação ventilatória</th><th>Conduta recomendada</th><th>Impacto no score</th></tr></thead>
+      <tbody>
+        <tr><td>Em ar ambiente com SpO2 ≥ 92%</td><td>Situação ideal — sem restrição ventilatória para transferência</td><td class="pts-pos">+25 (incluído nos critérios positivos)</td></tr>
+        <tr><td>Cateter nasal O2 ≤ 2 L/min com SpO2 estável</td><td>Transferência possível se destino dispõe de O2 e evolução é de desmame progressivo; documentar no sumário</td><td class="pts-neg">−15 (penalização parcial)</td></tr>
+        <tr><td>Máscara com reservatório ou Venturi &gt; 35%</td><td>Alto fluxo de O2 — não transferir; reavaliar em 24–48h para desmame</td><td class="pts-neg">−30 (incluído nos critérios negativos)</td></tr>
+        <tr><td>VNI (BiPAP/CPAP) intermitente</td><td>Avaliar tendência de desmame; transferência somente se VNI for apenas noturna e destino tiver suporte adequado</td><td class="pts-neg">−35</td></tr>
+        <tr><td>IOT / Ventilação mecânica invasiva</td><td>Bloqueio absoluto — não transferir enquanto em VM invasiva</td><td class="pts-neg">Bloqueio absoluto</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Escala CURB-65 — pontuação de gravidade (usada como fator de peso)</div>
+    <table>
+      <thead><tr><th>Letra</th><th>Critério</th><th>Peso no score DataCross</th></tr></thead>
+      <tbody>
+        <tr><td>C</td><td>Confusão mental (novo episódio)</td><td class="pts-neg">−15 se presente</td></tr>
+        <tr><td>U</td><td>Ureia &gt; 43 mg/dL</td><td class="pts-neg">−10 se presente</td></tr>
+        <tr><td>R</td><td>FR ≥ 30 irpm</td><td class="pts-neg">−15 se presente</td></tr>
+        <tr><td>B</td><td>PAS &lt; 90 mmHg ou PAD &lt; 60 mmHg</td><td class="pts-neg">−20 se presente</td></tr>
+        <tr><td>65</td><td>Idade ≥ 65 anos</td><td class="pts-neg">−5 se presente</td></tr>
+      </tbody>
+    </table>
+    <div class="score-box">
+      <div class="sbox"><div class="sbox-val green-val">≥ 70</div><div class="sbox-label">Apto para transferência / alta / habilitação</div></div>
+      <div class="sbox"><div class="sbox-val amber-val">40–69</div><div class="sbox-label">Reavaliar em 24h</div></div>
+      <div class="sbox"><div class="sbox-val red-val">&lt; 40</div><div class="sbox-label">Permanece internado</div></div>
+    </div>
+    <div class="bloqueio-box">
+      <div class="bloqueio-title">Critérios de bloqueio absoluto — score ignorado, não transferir</div>
+      <div class="bloqueio-item">· IOT / Ventilação mecânica invasiva em curso<br>· VNI contínua (BiPAP/CPAP) sem perspectiva de desmame em 48h<br>· SpO2 &lt; 88% com O2 &gt; 4 L/min ou FiO2 &gt; 40%<br>· Pneumonia necrotizante ou abscesso pulmonar em tratamento ativo<br>· Empiema pleural em drenagem ativa (dreno torácico)<br>· Progressão radiológica confirmada em RX ou TC de tórax nas últimas 24h (consolidação irreversível ou cavitação nova)</div>
+    </div>
+    <div class="fonte">Fontes: ATS/IDSA PAC Guidelines 2019 · SBPT — Diretrizes Pneumonia 2018 · BTS Guidelines PAC 2009 · CURB-65 (Lim et al., Thorax 2003) · MS — Protocolo PAC SUS 2021 · PORT/PSI Score (Fine et al., NEJM 1997)</div>
+  </div>
+</div>
+
+<!-- ══ AVC ══ -->
+<div class="perfil">
+  <div class="perfil-header" style="background:#E1F5EE">
+    <div>
+      <div class="perfil-title st-teal">AVC — Acidente Vascular Cerebral</div>
+      <div class="perfil-sub st-teal">Isquêmico · hemorrágico · fase pós-aguda estável</div>
+    </div>
+    <span class="badge h-teal">CID I63 · I64 · I61</span>
+  </div>
+  <div class="criterios">
+    <div class="section-label">Critérios positivos — somam pontos</div>
+    <table>
+      <thead><tr><th>Critério</th><th>Parâmetro</th><th>Pts</th><th>Base clínica</th></tr></thead>
+      <tbody>
+        <tr><td>Estabilidade neurológica</td><td>NIHSS sem piora nas últimas 48h</td><td class="pts-pos">+30</td><td>ASA/AHA 2019 — ausência de progressão é marco para reabilitação</td></tr>
+        <tr><td>Via aérea protegida</td><td>Sem risco de aspiração · Glasgow ≥ 13</td><td class="pts-pos">+20</td><td>MS — segurança para transferência a CER</td></tr>
+        <tr><td>PA controlada</td><td>PAS 130–180 mmHg estável</td><td class="pts-pos">+15</td><td>AHA — alvo pressórico pós-AVC isquêmico</td></tr>
+        <tr><td>≥ 72h pós-evento</td><td>Fase hiperaguda encerrada</td><td class="pts-pos">+15</td><td>MS — janela mínima antes de transferência para reabilitação</td></tr>
+        <tr><td>Deglutição avaliada</td><td>Avaliação fonoaudiológica realizada</td><td class="pts-pos">+10</td><td>SBDCV — rastreio de disfagia obrigatório pré-alta</td></tr>
+        <tr><td>Anticoagulação iniciada</td><td>Se FA — anticoagulante iniciado</td><td class="pts-pos">+10</td><td>AHA 2019 — início precoce se sem contraindicação</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Critérios negativos — subtraem pontos</div>
+    <table>
+      <thead><tr><th>Critério</th><th>Parâmetro</th><th>Pts</th><th>Base clínica</th></tr></thead>
+      <tbody>
+        <tr><td>Piora neurológica</td><td>Queda ≥ 2 pts no NIHSS em 24h</td><td class="pts-neg">−40</td><td>Progressão do AVC — necessidade de monitorização intensiva</td></tr>
+        <tr><td>Transformação hemorrágica</td><td>Nova hemorragia no controle de imagem</td><td class="pts-neg">−40</td><td>Contraindicação absoluta à transferência</td></tr>
+        <tr><td>Glasgow &lt; 13</td><td>Rebaixamento de consciência</td><td class="pts-neg">−30</td><td>Risco de aspiração e necessidade de monitorização</td></tr>
+        <tr><td>Hipertensão refratária</td><td>PAS &gt; 220 mmHg sem controle</td><td class="pts-neg">−20</td><td>Risco de expansão hemorrágica ou edema</td></tr>
+        <tr><td>Disfagia grave</td><td>Sem via oral segura — SNE ou GTT</td><td class="pts-neg">−15</td><td>Necessidade de acompanhamento nutricional especializado</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Escala NIHSS — usada como modificador do score DataCross</div>
+    <table>
+      <thead><tr><th>NIHSS</th><th>Gravidade</th><th>Modificador DataCross</th></tr></thead>
+      <tbody>
+        <tr><td>0–4</td><td>AVC leve</td><td class="pts-pos">+10 (favorece transferência precoce)</td></tr>
+        <tr><td>5–15</td><td>AVC moderado</td><td class="pts-blk">0 (neutro — depende dos outros critérios)</td></tr>
+        <tr><td>16–20</td><td>AVC moderado-grave</td><td class="pts-neg">−10 (atenção extra)</td></tr>
+        <tr><td>≥ 21</td><td>AVC grave</td><td class="pts-neg">−25 (bloqueio quase certo)</td></tr>
+      </tbody>
+    </table>
+    <div class="section-label">Escala mRS — destino pós-transferência</div>
+    <table>
+      <thead><tr><th>mRS</th><th>Funcionalidade</th><th>Destino sugerido pelo DataCross</th></tr></thead>
+      <tbody>
+        <tr><td>0–1</td><td>Sem ou mínima incapacidade</td><td>Alta domiciliar + ambulatório neurologia</td></tr>
+        <tr><td>2–3</td><td>Incapacidade leve-moderada</td><td>CER — Centro Especializado de Reabilitação</td></tr>
+        <tr><td>4–5</td><td>Incapacidade grave</td><td>Atenção domiciliar AD3 ou ILPI</td></tr>
+      </tbody>
+    </table>
+    <div class="score-box">
+      <div class="sbox"><div class="sbox-val green-val">≥ 70</div><div class="sbox-label">Apto para reabilitação</div></div>
+      <div class="sbox"><div class="sbox-val amber-val">40–69</div><div class="sbox-label">Reavaliar em 24h</div></div>
+      <div class="sbox"><div class="sbox-val red-val">&lt; 40</div><div class="sbox-label">Permanece na unidade</div></div>
+    </div>
+    <div class="bloqueio-box">
+      <div class="bloqueio-title">Critérios de bloqueio absoluto</div>
+      <div class="bloqueio-item">· Menos de 24h do evento (fase hiperaguda)<br>· Hemicraniectomia recente (&lt; 72h)<br>· Vasoespasmo ativo (AVC hemorrágico)<br>· Trombólise IV nas últimas 24h — monitorização obrigatória<br>· Trombectomia mecânica — 24h de observação pós-procedimento</div>
+    </div>
+    <div class="fonte">Fontes: AHA/ASA Stroke Guidelines 2019 · MS — Linha de Cuidado AVC 2013 · SBDCV — Protocolo AVC Isquêmico 2022 · NIHSS (NIH Stroke Scale) · mRS (Modified Rankin Scale) · Escala de Barthel</div>
+  </div>
+</div>
+
+</div>
