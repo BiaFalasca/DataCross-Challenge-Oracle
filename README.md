@@ -12,7 +12,7 @@ O DataCross é um sistema de apoio baseado em Processamento de Linguagem Natural
 - Gabrielle Trindade 
 - Felipe Lessa 
 - Gabriel Rodrigues
-- 
+
 
 ## 📌 Sobre o Projeto
 
