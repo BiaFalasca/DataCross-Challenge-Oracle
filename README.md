@@ -28,7 +28,7 @@ O DataCross não tem como objetivo substituir os sistemas já utilizados na regu
 
 ## 🎯 Problema
 
-O sistema de saúde pública possui grandes volumes de dados provenientes de diferentes fontes, como DATASUS, CNES e SIRESP, porém essas informações nem sempre são exploradas de maneira eficiente e em tempo real.
+O sistema de saúde pública possui grandes volumes de dados provenientes de diferentes fontes, como DATASUS, CNES, CROSS e SIRESP, porém essas informações nem sempre são exploradas de maneira eficiente e em tempo real.
 
 Além disso, a análise de prontuários pode ser um processo manual e demorado, dificultando a identificação rápida de pacientes que já podem ser encaminhados para uma nova etapa do atendimento.
 
@@ -41,4 +41,8 @@ Essa demora pode contribuir para a permanência hospitalar prolongada e para uma
 O DataCross utiliza técnicas de **Processamento de Linguagem Natural** para analisar automaticamente informações presentes nos prontuários.
 
 A partir dessa análise, o sistema busca identificar pacientes potencialmente aptos para transferência ou alta e sinalizar casos prioritários para a fila de regulação.
+
+
+> **Observação:** O DataCross não substitui o CROSS ou o SIRESP. Ele atua como uma camada inteligente de apoio à decisão, utilizando os dados existentes para automatizar análises e priorizar casos.
+
 
