@@ -8,33 +8,17 @@ Nesta etapa, cada disciplina trabalhou uma parte específica do projeto, contrib
 
 As entregas estão separadas nas seguintes categorias:
 
-* **[Nome da disciplina 1]** — breve descrição da atividade realizada.
-* **[Nome da disciplina 2]** — breve descrição da atividade realizada.
-* **[Nome da disciplina 3]** — breve descrição da atividade realizada.
-* **[Nome da disciplina 4]** — breve descrição da atividade realizada.
-
+* **[DATA ARCHITECTURE, ANALYTICS & NoSQL SOLUTIONS]** — Provisionamento do Oracle Database 26 AI no OCI, Modelagem Relacional e Consultas com Select AI 
+* **[MODERN DATA ARCHITECTURE & ENGINEERING]** — Arquitetura Lambda/Kappa e Pipeline Orquestrado aplicados ao Challenge   
+* **[DATA ETHICS, GOVERNANCE & SECURITY IN THE AI AGE]** — Plano de projeto de solução 
+* **[BUILDING DATA-DRIVEN APPLICATIONS FOR DATA SCIENCE]** — Desenvolver, aprimorar ou complementar um código Python já existente no projeto
+* **[SMART SQL & RELATIONAL DATABASES]** — MPORTAÇÃO DE UM DATASET NO ORACLE DATABASE E SCRIPTS DDL E DML
+* **[STATISTICAL METHODS FOR DATA SCIENCE & MACHINE LEARNING]** — nálise Exploratória de Dados (AED) robusta, com o objetivo de avaliar a viabilidade de uso dos dados em uma modelagem preditiva e compreender as limitações inerentes às bases disponíveis.
+  
 ## 🎯 Objetivo da Sprint
 
 A Sprint 3 teve como objetivo avançar no desenvolvimento do DataCross, aplicando os conhecimentos trabalhados nas diferentes disciplinas ao longo do projeto.
 
 Cada entrega apresenta uma contribuição específica para a solução, contemplando aspectos como desenvolvimento, dados, arquitetura, banco de dados, documentação e demais requisitos definidos para a sprint.
-
-## 💡 Sobre o DataCross
-
-O **DataCross** é uma solução de apoio à regulação hospitalar que utiliza tecnologia e Processamento de Linguagem Natural (PLN) para analisar informações de prontuários e auxiliar na identificação de pacientes potencialmente aptos para transferência ou alta.
-
-A proposta é atuar como uma **camada inteligente de apoio aos sistemas existentes**, como o CROSS e o SIRESP, contribuindo para uma análise mais rápida dos dados e para uma tomada de decisão mais eficiente, mantendo a validação humana antes de qualquer encaminhamento.
-
-## 👥 Equipe
-
-**Dados e Danados**
-
-* Beatriz Falasca
-* Felipe Lessa
-* Gabriel Rodrigues
-* Gabrielle Trindade
-* Maria Eduarda Rodrigues
-
----
 
 > **Observação:** Os arquivos desta pasta correspondem especificamente às atividades solicitadas na Sprint 3 e estão organizados por disciplina para facilitar a identificação e avaliação de cada entrega.
