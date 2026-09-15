@@ -6,6 +6,12 @@ Plataforma inteligente de regulação hospitalar desenvolvida para o Challenge O
 ## O Projeto
 O DataCross é um sistema de apoio baseado em Processamento de Linguagem Natural (PLN) que lê prontuários médicos automaticamente e identifica pacientes com internação prolongada sem necessidade.
 
+## Link do Pitch do projeto
+https://youtu.be/d50cw0euP3s
+
+## Link do MVP em Oracle Apex
+https://gd08059524f2489-paineldados.adb.sa-saopaulo-1.oraclecloudapps.com/ords/r/datacross/datacross/fila-de-triagem?session=11740609950053
+
 ## Equipe: Dados e Danados (Turma 1TSCPF)
 - Beatriz Falasca
 - Maria Eduarda Rodrigues 
