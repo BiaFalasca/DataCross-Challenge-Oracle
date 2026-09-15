@@ -7,27 +7,6 @@ As fontes foram utilizadas para apoiar diferentes etapas do projeto, incluindo a
 
 Além das referências bibliográficas, este diretório também contém arquivos e materiais utilizados como apoio durante o desenvolvimento do projeto.
 
-## 📖 Referências bibliográficas
-
-As referências utilizadas no projeto estão apresentadas abaixo conforme as normas da **ABNT**.
-
-### Referência 1
-
-> INSIRA AQUI A REFERÊNCIA EM FORMATO ABNT.
-
-### Referência 2
-
-> INSIRA AQUI A REFERÊNCIA EM FORMATO ABNT.
-
-### Referência 3
-
-> INSIRA AQUI A REFERÊNCIA EM FORMATO ABNT.
-
-### Referência 4
-
-> INSIRA AQUI A REFERÊNCIA EM FORMATO ABNT.
-
----
 
 ## 📂 Materiais de referência
 
